@@ -1,0 +1,107 @@
+{
+  "name": "Facebook登录插件",
+  "id": "sn-facebook",
+  "version": "1.0.17",
+  "description": "提供facebook登录功能",
+  "_dp_type": "nativeplugin",
+  "_dp_nativeplugin": {
+    "android": {
+      "useAndroidX": true,
+      "minSdkVersion": 19,
+      "integrateType": "aar",
+      "compileOptions": {
+        "sourceCompatibility": "1.8",
+        "targetCompatibility": "1.8"
+      },
+      "dependencies": [
+        "org.jetbrains.kotlin:kotlin-stdlib:1.5.10",
+        "com.android.support:appcompat-v7:28.0.0",
+        "com.android.support:recyclerview-v7:28.0.0",
+        "com.android.support:cardview-v7:28.0.0",
+        "com.facebook.android:facebook-android-sdk:16.2.0"
+      ],
+      "hooksClass": "com.itfenbao.snplugin.facebook.FacebookProxy",
+      "plugins": [
+        {
+          "type": "module",
+          "name": "sn-facebook",
+          "class": "com.itfenbao.snplugin.facebook.FacebookModule"
+        }
+      ],
+      "parameters": {
+        "applicationId": {
+          "des": "Facebook应用编号",
+          "placeholder": "sn_facebook_app_id"
+        },
+        "clientToken": {
+          "des": "FacebookClientToken",
+          "placeholder": "sn_facebook_client_token"
+        }
+      }
+    },
+    "ios": {
+      "embedSwift": true,
+      "integrateType": "framework",
+      "hooksClass": "SnUniFacebookProxy",
+      "plugins": [
+        {
+          "type": "module",
+          "name": "sn-facebook",
+          "class": "SnUniFacebookModule"
+        }
+      ],
+      "frameworks": [
+        "FBAEMKit.framework",
+        "FBSDKCoreKit_Basics.framework",
+        "FBSDKCoreKit.framework",
+        "FBSDKLoginKit.framework",
+        "FBSDKShareKit.framework"
+      ],
+      "embedFrameworks": [
+        "FBAEMKit.framework",
+        "FBSDKCoreKit_Basics.framework",
+        "FBSDKCoreKit.framework",
+        "FBSDKLoginKit.framework",
+        "FBSDKShareKit.framework"
+      ],
+      "deploymentTarget": "11.0",
+      "validArchitectures": [    
+        "arm64"
+      ],
+      "parameters": {
+        "applicationId": {
+          "key": "FacebookAppID",
+          "des": "Facebook应用编号"
+        },
+        "applicationName": {
+          "key": "FacebookDisplayName",
+          "des": "Facebook应用名称"
+        },
+        "clientToken": {
+          "key": "FacebookClientToken",
+          "des": "FacebookClientToken"
+        }
+      },
+      "plists": {
+        "LSApplicationQueriesSchemes": [
+          "fb",
+          "fbapi",
+          "fbapi20130214",
+          "fbapi20130410",
+          "fbapi20130702",
+          "fbapi20131010",
+          "fbapi20131219",
+          "fbapi20140410",
+          "fbapi20140116",
+          "fbapi20150313",
+          "fbapi20150629",
+          "fbapi20160328",
+          "fbauth",
+          "fb-messenger-share-api",
+          "fbauth2",
+          "fbshareextension"
+        ]
+      }
+    }
+  }
+}

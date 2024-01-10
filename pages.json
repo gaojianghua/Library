@@ -1,0 +1,347 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabbar/comics/index",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+				"navigationBarTextStyle": "black" ,// 状态栏字体为黑色，只能为 white-白色，black-黑色 二选一
+				"app-plus" : {
+					"bounce" : "none" // 取消APP端iOS回弹,避免与下拉刷新冲突 (可统一配在 'globalStyle')
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/tabbar/mine/index",
+            "style" :                                                                                    
+            {
+                // "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+				"navigationBarTextStyle": "black" ,// 状态栏字体为黑色，只能为 white-白色，black-黑色 二选一
+				"app-plus" : {
+					"bounce" : "none" // 取消APP端iOS回弹,避免与下拉刷新冲突 (可统一配在 'globalStyle')
+				}
+            }
+            
+        },{
+            "path" : "pages-child/my-bookshelf/index",
+            "style" :                                                                                    
+            {
+				"navigationBarTitleText": "%page.我的书架%",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#111",
+                "navigationStyle": "custom" // 隐藏系统导航栏
+                // "navigationBarTextStyle": "black" // 状态栏字体为黑色，只能为 white-白色，black-黑色 二选一
+            }
+            
+        }
+        ,{
+            "path" : "pages/tabbar/novel/index",
+            "style" :                                                                                    
+            {
+				"navigationBarTitleText": "%page.小说%",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#111",
+                "navigationStyle": "custom" // 隐藏系统导航栏
+                // "navigationBarTextStyle": "black" // 状态栏字体为黑色，只能为 white-白色，black-黑色 二选一
+            }
+            
+        },{
+            "path" : "pages/tabbar/category/index",
+            "style" :                                                                                    
+            {
+                "navigationBarBackgroundColor": "#111",
+                "navigationBarTitleText": "%page.书库%",
+                "enablePullDownRefresh": false,
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+				"navigationBarTextStyle": "black" ,// 状态栏字体为黑色，只能为 white-白色，black-黑色 二选一
+				"app-plus" : {
+					"bounce" : "none" // 取消APP端iOS回弹,避免与下拉刷新冲突 (可统一配在 'globalStyle')
+				}
+            }
+            
+        }
+    ],
+	"subPackages": [{
+		"root": "pages-child",
+		"pages": [
+			{
+			    "path" : "ranking/index",
+			    "style" :                                                                                    
+			    {
+					"navigationBarBackgroundColor": "#111",
+			        "navigationBarTitleText": "%page.排行榜%",
+			        "enablePullDownRefresh": false,
+					"navigationStyle": "custom"
+			    }
+			    
+			}
+			,{
+			    "path" : "comic-read/index",
+			    "style" :                                                                                    
+			    {
+					"navigationBarBackgroundColor": "#111",
+			        "navigationBarTitleText": "",
+					"enablePullDownRefresh": false,
+					"navigationStyle": "custom" ,// 隐藏系统导航栏
+					"navigationBarTextStyle": "black",// 状态栏字体为黑色，只能为 white-白色，black-黑色 二选一
+					"app-plus" : {
+						"bounce" : "none" // 取消APP端iOS回弹,避免与下拉刷新冲突 (可统一配在 'globalStyle')
+					}
+			    }
+			    
+			},{
+			    "path" : "comic-exclusive/index",
+			    "style" :                                                                                    
+			    {
+					"navigationBarBackgroundColor": "#111",
+			        "navigationBarTitleText": "",
+					"navigationStyle": "custom" ,// 隐藏系统导航栏
+					"app-plus" : {
+						"bounce" : "none" // 取消APP端iOS回弹,避免与下拉刷新冲突 (可统一配在 'globalStyle')
+					}
+			    }
+			    
+			}, {
+				"path": "feedback/index",
+				"style": {
+					"navigationBarBackgroundColor": "#111",
+					"navigationStyle": "custom",
+					"enablePullDownRefresh": false
+				}
+			
+			},{
+				"path": "feedback-record/index",
+				"style": {
+					"navigationBarBackgroundColor": "#111",
+					"navigationStyle": "custom",
+					"enablePullDownRefresh": false
+				}
+			
+			},{
+				"path": "feedback-detail/index",
+				"style": {
+					"navigationBarBackgroundColor": "#111",
+					"navigationStyle": "custom",
+					"enablePullDownRefresh": false
+				}
+			
+			}
+			,{
+			    "path" : "comic-news/index",
+			    "style" :                                                                                    
+			    {
+			        "navigationBarBackgroundColor": "#111",
+					"navigationStyle": "custom",
+			        "navigationBarTitleText": "%page.近期新作%",
+			        "enablePullDownRefresh": false
+			    }
+			    
+			}
+			,{
+			    "path" : "comic-finished/index",
+			    "style" :                                                                                    
+			    {
+			        "navigationBarBackgroundColor": "#111",
+					"navigationStyle": "custom",
+			        "navigationBarTitleText": "%page.完结%",
+			        "enablePullDownRefresh": false
+			    }
+			    
+			}
+			,{
+			    "path" : "search/index",
+			    "style" :                                                                                    
+			    {
+					"navigationBarBackgroundColor": "#111",
+			        "navigationBarTitleText": "%page.搜索页%",
+			        "enablePullDownRefresh": false,
+					"navigationStyle": "custom"
+			    }
+			    
+			}
+			,{
+			    "path" : "comic-detail/index",
+			    "style" :                                                                                    
+			    {
+			        // "navigationBarTitleText": "漫画详情",
+			        // "enablePullDownRefresh": false,
+			        // "transparentTitle": "auto",
+			        "navigationBarBackgroundColor": "#111",
+			        // "backgroundColor": "#ffffff"
+					"navigationStyle": "custom" ,// 隐藏系统导航栏
+					"navigationBarTextStyle": "white" ,// 状态栏字体为黑色，只能为 white-白色，black-黑色 二选一
+					"app-plus" : {
+						"bounce" : "none" ,// 取消APP端iOS回弹,避免与下拉刷新冲突 (可统一配在 'globalStyle')
+						"softinputMode": "adjustResize" // 软键盘弹出时，webview窗体高度挤压。屏幕高度=webview窗体高度+软键盘高度
+					}
+			    }
+			    
+			}
+			,{
+			    "path" : "history/index",
+			    "style" :                                                                                    
+			    {
+			        "navigationBarBackgroundColor": "#111",
+			        "navigationBarTitleText": "%page.阅读历史%",
+			        "enablePullDownRefresh": true,
+					"navigationStyle": "custom"
+			    }
+			    
+			}
+			,{
+			    "path" : "about-us/index",
+			    "style" :                                                                                    
+			    {
+					"navigationBarBackgroundColor": "#111",
+			        "navigationStyle": "custom",
+			        "enablePullDownRefresh": false
+			    }
+			    
+			}
+			,{
+			    "path" : "member-center/index",
+			    "style" :                                                                                    
+			    {
+					"navigationBarBackgroundColor": "#111",
+			        "navigationBarTitleText": "%page.会员中心%",
+					"navigationStyle": "custom" ,// 隐藏系统导航栏
+					"navigationBarTextStyle": "white" ,// 状态栏字体为黑色，只能为 white-白色，black-黑色 二选一
+			        "enablePullDownRefresh": false
+			    }
+			    
+			},{
+			    "path" : "member-recharge/index",
+			    "style" :                                                                                    
+			    {
+					"navigationBarBackgroundColor": "#111",
+			        "navigationBarTitleText": "%page.会员中心%",
+					"navigationStyle": "custom" ,// 隐藏系统导航栏
+					"navigationBarTextStyle": "white" ,// 状态栏字体为黑色，只能为 white-白色，black-黑色 二选一
+			        "enablePullDownRefresh": false
+			    }
+			    
+			}
+			,{
+			    "path" : "userinfo/index",
+			    "style" :                                                                                    
+			    {
+			        "navigationBarTitleText": "%page.个人信息%",
+			        "enablePullDownRefresh": false,
+					"navigationStyle": "custom"
+			    }
+			    
+			}
+			,{
+			    "path" : "privacy/index",
+			    "style" :                                                                                    
+			    {
+			        "navigationBarTitleText": "%page.隐私政策%",
+			        "enablePullDownRefresh": false,
+					"navigationStyle": "custom"
+				}
+			    
+			}
+			,{
+			    "path" : "novel-news/index",
+			    "style" :                                                                                    
+			    {
+			        "navigationBarTitleText": "%page.新书%",
+			        "enablePullDownRefresh": false,
+					"navigationStyle": "custom"
+				}
+			    
+			}
+			,{
+			    "path" : "novel-detail/index",
+			    "style" :                                                                                    
+			    {
+			        "enablePullDownRefresh": false,
+					"navigationStyle": "custom"
+				}
+			    
+			}
+			,{
+			    "path" : "novel-read/index",
+			    "style" :                                                                                    
+			    {
+			        "enablePullDownRefresh": false,
+					"navigationStyle": "custom"
+				}
+			    
+			}
+			,{
+			    "path" : "novel-mark/index",
+			    "style" :                                                                                    
+			    {
+			        "navigationBarTitleText": "%page.新书%",
+			        "enablePullDownRefresh": false,
+					"navigationStyle": "custom"
+				}
+			    
+			}
+			,{
+			    "path" : "comic-mores/index",
+			    "style" :                                                                                    
+			    {
+			        "navigationBarTitleText": "",
+			        "enablePullDownRefresh": false,
+					"navigationStyle": "custom" ,// 隐藏系统导航栏
+					"navigationBarTextStyle": "black" // 状态栏字体为黑色，只能为 white-白色，black-黑色 二选一
+			    }
+			    
+			}
+			,{
+			    "path" : "comic-hold/index",
+			    "style" :                                                                                    
+			    {
+			        "navigationBarTitleText": "",
+			        "enablePullDownRefresh": false,
+					"navigationStyle": "custom" ,// 隐藏系统导航栏
+					"navigationBarTextStyle": "black" // 状态栏字体为黑色，只能为 white-白色，black-黑色 二选一
+			    }
+			    
+			}
+		]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "錘子漫畫",
+		"navigationBarBackgroundColor": "#111",
+		"backgroundColor": "#111"
+	},
+	"tabBar":{
+		"color": "#fff",
+		"selectedColor": "#6F43FE",
+		"borderStyle": "black",
+		"backgroundColor": "#050B18",
+		"list": [
+			{
+				"pagePath": "pages/tabbar/comics/index",
+				"iconPath": "static/img/tabbar/comics.png",
+				    "selectedIconPath": "static/img/tabbar/comics-select.png",
+				    "text": "%page.漫画%"
+			},
+			{
+				"pagePath": "pages/tabbar/novel/index",
+				"iconPath": "static/img/tabbar/novel.png",
+				    "selectedIconPath": "static/img/tabbar/novel-select.png",
+				    "text": "%page.小说%"
+			},
+			{
+				"pagePath": "pages/tabbar/category/index",
+				"iconPath": "static/img/tabbar/category.png",
+				    "selectedIconPath": "static/img/tabbar/category-select.png",
+				    "text": "%page.分类%"
+			},
+			{
+				"pagePath": "pages/tabbar/mine/index",
+				"iconPath": "static/img/tabbar/mine.png",
+				    "selectedIconPath": "static/img/tabbar/mine-select.png",
+				    "text": "%page.我的%"
+			}
+		]
+	},
+	"app-env": "Pro"
+}

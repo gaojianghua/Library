@@ -1,0 +1,69 @@
+{
+  "name": "Adjust插件",
+  "id": "sn-adjust",
+  "version": "1.0.4",
+  "description": "提供Adjust功能",
+  "_dp_type": "nativeplugin",
+  "_dp_nativeplugin": {
+    "android": {
+      "useAndroidX": true,
+      "minSdkVersion": 21,
+      "integrateType": "aar",
+      "dependencies": [
+        "com.adjust.sdk:adjust-android:4.35.0",
+        "com.android.installreferrer:installreferrer:2.2",
+        "com.google.android.gms:play-services-ads-identifier:18.0.1"
+      ],
+      "hooksClass": "com.itfenbao.snplugin.adjust.SnAdjustProxy",
+      "plugins": [
+        {
+          "type": "module",
+          "name": "sn-adjust",
+          "class": "com.itfenbao.snplugin.adjust.SnAdjustModule"
+        }
+      ],
+      "parameters": {
+        "ENVIRONMENT": {
+          "des": "Adjust环境: production | sandbox",
+          "key": "ADJUST_ENVIRONMENT"
+        },
+        "AppToken": {
+          "des": "Adjust App Token",
+          "key": "ADJUST_APP_TOKEN"
+        }
+      }
+    },
+    "ios": {
+      "integrateType": "framework",
+      "hooksClass": "SnUniAdjustProxy",
+      "plugins": [
+        {
+          "type": "module",
+          "name": "sn-adjust",
+          "class": "SnUniAdjustModule"
+        }
+      ],
+      "frameworks": [
+        "AdSupport.framework",
+        "iAd.framework",
+        "AdServices.framework",
+        "Adjust.framework"
+      ],
+      "embedFrameworks": [
+        "Adjust.framework"
+      ],
+      "deploymentTarget": "11.0",
+      "validArchitectures": ["arm64"],
+      "parameters": {
+        "ENVIRONMENT": {
+          "des": "Adjust环境: production | sandbox",
+          "key": "ADJUST_ENVIRONMENT"
+        },
+        "AppToken": {
+          "des": "Adjust App Token",
+          "key": "ADJUST_APP_TOKEN"
+        }
+      }
+    }
+  }
+}

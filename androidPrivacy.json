@@ -1,0 +1,38 @@
+{
+    "version" : "1",
+    "prompt" : "template",
+    "title" : "服務協議和隱私政策",
+    "message" : "請你務必審慎閱讀、充分理解「服務協議」和「隱私政策」各條款，包括但不限於：為了更好的向你提供服務，我們需要收集你的設備標識、操作日誌等信息用於分析、優化應用性能。<br/>你可閱讀<a href=\"https://www.hamrcomic.com/privacy.html\">《服務協議》</a>和<a href=\"https://www.hamrcomic.com/privacy.html\">《隱私政策》</a>了解詳細信息。如果你同意，請點擊下面按鈕開始接受我們的服務。",
+    "buttonAccept" : "同意並接受",
+    "buttonRefuse" : "暫不同意",
+    "hrefLoader" : "system|default",
+    "backToExit" : "false",
+    "second" : {
+        "title" : "確認提示",
+        "message" : "進入應用前，你需先同意<a href=\"https://www.hamrcomic.com/privacy.html\">《服務協議》</a>和<a href=\"https://www.hamrcomic.com/privacy.html\">《隱私政策》</a>，否則將退出應用。",
+        "buttonAccept" : "同意並繼續",
+        "buttonRefuse" : "退出應用"
+    },
+    "disagreeMode" : {
+        "support" : false,
+        "loadNativePlugins" : false,
+        "visitorEntry" : false,
+        "showAlways" : false
+    },
+    "styles" : {
+        "backgroundColor" : "#FFF",
+        "borderRadius" : "5px",
+        "title" : {
+            "color" : "#000"
+        },
+        "buttonAccept" : {
+            "color" : "#6F43FE"
+        },
+        "buttonRefuse" : {
+            "color" : "#aaa"
+        },
+        "buttonVisitor" : {
+            "color" : "#aaa"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "android google v5支付插件",
+  "id": "sn-googlepay5",
+  "version": "1.0.2",
+  "description": "提供android google v5支付功能",
+  "_dp_type": "nativeplugin",
+  "_dp_nativeplugin": {
+    "android": {
+      "integrateType": "aar",
+      "minSdkVersion": 21,
+      "compileOptions": {
+        "sourceCompatibility": "1.8",
+        "targetCompatibility": "1.8"
+      },
+      "plugins": [
+        {
+          "type": "module",
+          "name": "sn-googlepay5",
+          "class": "com.itfenbao.snplugin.googlepay5.GooglePayModule"
+        }
+      ],
+      "dependencies": [
+        "com.android.billingclient:billing:6.0.1"
+      ]
+    }
+  }
+}
