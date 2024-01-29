@@ -360,7 +360,6 @@
 
 		.bg-box {
 			height: 350rpx;
-			width: 690rpx;
 			background: url('/static/img/mine/vip-re-bg.png') no-repeat;
 			background-size: cover;
 
